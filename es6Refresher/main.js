@@ -41,10 +41,19 @@ const fruits = ['Apples', 'Oranges', 'Grapes'];
 
 // MAP
 
-const singleFruit = fruits.map((fruit) => fruit.slice(0, -1));
+const singleFruit = fruits.map((fruit) => fruit.slice(0, -1).toUpperCase());
 
-console.log(singleFruit);
+// console.log(singleFruit);
+
 // FILTER
+const people = [
+  {id: 1, name: 'Karen'},
+  {id: 2, name: 'Bob'},
+  {id: 3, name: 'Sharon'}
+];
+
+const people2 = people.filter(person => person.id !== 2);
+console.log(people2);
 
 // SPREAD
 
