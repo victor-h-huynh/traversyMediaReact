@@ -28,11 +28,11 @@
 //   console.log('Hello');
 // }
 
-const sayHello = (name) => {
-  console.log(`Hello ${name}`);
-};
+// const sayHello = (name) => {
+//   console.log(`Hello ${name}`);
+// };
 
-const fruits = ['Apples', 'Oranges', 'Grapes'];
+// const fruits = ['Apples', 'Oranges', 'Grapes'];
 
 // sayHello('Victor');
 
@@ -41,23 +41,58 @@ const fruits = ['Apples', 'Oranges', 'Grapes'];
 
 // MAP
 
-const singleFruit = fruits.map((fruit) => fruit.slice(0, -1).toUpperCase());
+// const singleFruit = fruits.map((fruit) => fruit.slice(0, -1).toUpperCase());
 
 // console.log(singleFruit);
 
 // FILTER
-const people = [
-  {id: 1, name: 'Karen'},
-  {id: 2, name: 'Bob'},
-  {id: 3, name: 'Sharon'}
-];
+// const people = [
+//   {id: 1, name: 'Karen'},
+//   {id: 2, name: 'Bob'},
+//   {id: 3, name: 'Sharon'}
+// ];
 
-const people2 = people.filter(person => person.id !== 2);
-console.log(people2);
+// const people2 = people.filter(person => person.id !== 2);
+// console.log(people2);
 
 // SPREAD
 
+// const arr = ["apple", "orange", "pear"]
+// const arr2 = [...arr, "grape"]
+// const arr3 = [...arr.filter(fruit => fruit != "pear")]
+
+// console.log(arr3);
+
+// const dog1 = {
+//   name: "Snoopy",
+//   color: "white"
+// };
+
+// const dog2 = {
+//   ...dog1,
+//   legs: 4
+// };
+
+// console.log(dog2);
+
 // DESTRUCTURING
+
+const animal = {
+  breed: 'dog',
+  traits: {
+    color: ['yellow', 'red'],
+    legs: 4
+  },
+  tail: true
+}
+
+const { breed } = animal;
+const { color } = animal.traits
+const { tail } = animal
+
+console.log(breed)
+console.log(color[1])
+console.log(tail)
 
 // CLASSES
 
